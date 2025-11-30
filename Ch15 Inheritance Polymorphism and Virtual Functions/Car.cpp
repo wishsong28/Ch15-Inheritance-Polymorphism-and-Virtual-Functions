@@ -10,19 +10,27 @@
 
 using namespace std;
 
-//Parameterized constructor implementation
+//***************************************************************************
+//Definition of Car handling parameterized Constructor implementation       *
+//***************************************************************************
 Car::Car(string carMfr, int carYear, int carDoors) : Vehicle(carMfr, carYear)
 { numDoors = carDoors; }
 
-//Getter implementations
+//***************************************************************************
+//Definition of getNumDoors handling Getter	implementation				    *
+//***************************************************************************
 int Car::getNumDoors() const
 { return numDoors; }
 
-//Setter implementations
+//***************************************************************************
+//Definition of setNumDoors handling Setter	implementation				    *
+//***************************************************************************
 void Car::setNumDoors(int &cardoors)
 { numDoors = cardoors; }
 
-//Display implementation
+//***************************************************************************
+//Definition of displayInfo to display both vehicle and car info details    *
+//***************************************************************************
 void Car::displayInfo() const
 {
 	Vehicle::displayInfo();

@@ -10,19 +10,27 @@
 
 using namespace std;
 
-//Parameterized constructor implementation
+//***************************************************************************
+//Definition of Truck handling parameterized Constructor implementation     *
+//***************************************************************************
 Truck::Truck(string TruckMfr, int TruckYear, int towCap) : Vehicle(TruckMfr, TruckYear)
 { towingCapacity = towCap; }
 
-//Getter implementations
+//***************************************************************************
+//Definition of getTowingCapacity handling Getter implementation		    *
+//***************************************************************************
 int Truck::getTowingCapacity() const
 { return towingCapacity; }
 
-//Setter implementations
+//***************************************************************************
+//Definition of setTowingCapacity handling Setter implementation		    *
+//***************************************************************************
 void Truck:: setTowingCapacity(int &capacity)
 { towingCapacity = capacity; }
 
-//Display implementation
+//***************************************************************************
+//Definition of displayInfo to display both vehicle and truck info details  *
+//***************************************************************************
 void Truck::displayInfo() const
 {
 	Vehicle::displayInfo();

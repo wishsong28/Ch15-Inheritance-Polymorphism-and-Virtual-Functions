@@ -69,7 +69,9 @@ int main()
     return 0;
 }
 
-//Function to handle reading a string
+//***************************************************************************
+//Definition of getLineInput to read cin string inputs          			*
+//***************************************************************************
 string getLineInput(const string &mfr)
 {
     string input;
@@ -78,7 +80,9 @@ string getLineInput(const string &mfr)
     return input;
 }
 
-//Function to handle reading an integer, with basic input validation
+//***************************************************************************
+//Definition of getIntInput to read cin int inputs          			*
+//***************************************************************************
 int getIntInput(const string &intLabel)
 {
     int input;

@@ -10,28 +10,42 @@
 
 using namespace std;
 
-//Parameterized constructor implementation
+//***************************************************************************
+//Definition of Vehicle handling parameterized Constructor implementation   *
+//***************************************************************************
 Vehicle::Vehicle (string vehicleMfr, int vehicleYear)
 {
     manufacturer = vehicleMfr;
     yearBuilt = vehicleYear;
 }
 
-//Getter implementations
+//***************************************************************************
+//Definition of getManufacturer handling Getter implementation				*
+//***************************************************************************
 string Vehicle::getManufacturer() const
 { return manufacturer; }
 
+//***************************************************************************
+//Definition of getYearBuilt handling Getter implementation					*
+//***************************************************************************
 int Vehicle::getYearBuilt() const
 { return yearBuilt; }
 
-//Setter implementations
+//***************************************************************************
+//Definition of setManufactrer handling Setter implementation				*
+//***************************************************************************
 void Vehicle::setManufacturer(string &vehicleMfr)
 {  manufacturer = vehicleMfr; }
 
+//***************************************************************************
+//Definition of setYearBuilt handling Setter implementation					*
+//***************************************************************************
 void Vehicle::setYearBuilt(int &vehicleYear)
 { yearBuilt = vehicleYear; }
 
-//Display implementation
+//***************************************************************************
+//Definition of displayInfo to display vehicle info details					*
+//***************************************************************************
 void Vehicle::displayInfo() const
 {
 	cout << "\nVehicle Information:\n";
