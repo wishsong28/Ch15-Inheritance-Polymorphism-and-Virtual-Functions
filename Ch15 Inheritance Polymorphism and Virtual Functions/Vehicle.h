@@ -21,33 +21,23 @@ class Vehicle
 
     public:
         //Default constructor
-		Vehicle()
-        {   
-            manufacturer = " ";
-		    yearBuilt = 0;
-        }
-        
-        //Parameterized constructor
-        Vehicle(string vehicleManufr, int vehicleYear)
+        Vehicle()
         {
-            manufacturer = vehicleManufr;
-		    yearBuilt = vehicleYear;
-		}
-        
-        //Getters
-        string getManufacturer() const
-		{ return manufacturer; }
+            manufacturer = " ";
+            yearBuilt = 0;
+        }
 
-        int getYearBuilt() const
-		{ return yearBuilt; }
+        //Parameterized constructor
+        Vehicle(string, int);
+
+        //Getters
+        string getManufacturer() const;
+        int getYearBuilt() const;
 
         //Setters
-        void setManufacturer(string &vehicleManufr)
-		{ manufacturer = vehicleManufr; }
+        void setManufacturer(string &);
+        void setYearBuilt(int &);
 
-        void setYearBuilt(int &vehicleYear)
-		{ yearBuilt = vehicleYear; }
-        
         //Display
         void displayInfo();
 };

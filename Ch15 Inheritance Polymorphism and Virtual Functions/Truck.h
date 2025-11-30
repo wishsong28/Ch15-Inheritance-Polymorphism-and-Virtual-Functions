@@ -23,19 +23,16 @@ class Truck : public Vehicle
         { towingCapacity = 0; }
 
         //Parameterized constructor
-        Truck(string truckManufr, int truckYear, int towCap) : Vehicle(truckManufr, truckYear)
-        { towingCapacity = towCap; }
+        Truck(string, int, int);
 
         //Getter
-        int getTowingCapacity()
-        { return towingCapacity; }
+        int getTowingCapacity() const;
 
         //Setter
-        void setTowingCapacity(int &capacity)
-        { towingCapacity = capacity; }
+        void setTowingCapacity(int &);
 
         //Display
-        void displayInfo();
+        void displayInfo() const;
 };
 
 #endif

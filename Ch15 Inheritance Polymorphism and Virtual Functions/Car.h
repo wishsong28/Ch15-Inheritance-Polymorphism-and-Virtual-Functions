@@ -16,25 +16,23 @@ class Car : public Vehicle
 {
     private:
         int numDoors;
+
     public:
 		//Default constructor
         Car() : Vehicle()
         { numDoors = 0; }
     
         //Parameterized constructor
-        Car(string carManufr, int carYear, int carDoors) : Vehicle(carManufr, carYear)
-        { numDoors = carDoors; }
+        Car(string, int, int);
 
         //Getter
-        int getNumDoors()
-		{ return numDoors; }
+        int getNumDoors() const;
 
         //Setter
-        void setNumDoors(int &cardoors)
-		{ numDoors = cardoors; }
+        void setNumDoors(int &);
 
         //Display
-        void displayInfo();
+        void displayInfo() const;
 };
 
 #endif
