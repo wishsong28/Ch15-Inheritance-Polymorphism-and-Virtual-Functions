@@ -25,5 +25,6 @@ void Truck:: setTowingCapacity(int &capacity)
 //Display implementation
 void Truck::displayInfo() const
 {
+	Vehicle::displayInfo();
 	cout << "Towing Capacity (lbs): " << towingCapacity << endl;
 }

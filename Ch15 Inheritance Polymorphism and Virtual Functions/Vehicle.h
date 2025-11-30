@@ -39,7 +39,7 @@ class Vehicle
         void setYearBuilt(int &);
 
         //Display
-        void displayInfo();
+        void displayInfo() const;
 };
 
 #endif
